@@ -19,7 +19,7 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::115971086545:role/DeviceFarm-GitHubActionRole
+          role-to-assume: arn:aws:iam::115971086545:policy/device_farm_iam_policy
           aws-region: us-west-2
 
       - name: Schedule Device Farm Automated Test
